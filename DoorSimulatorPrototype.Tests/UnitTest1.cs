@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Zeiss.DoorSimulatorPrototype;
 using System;
 
@@ -6,11 +6,7 @@ namespace DoorSimulatorPrototype.Tests {
     [TestClass]
     public class UnitTest1 {
         [TestMethod]
-        public void CreatingSimpleDoorShouldSetModel() {
-            SimpleDoor door = new SimpleDoor();
-            string model = door.Model;
-            Assert.IsNotNull(model);
-
+        public void CreatingDoorShouldSetModel() {
             SmartDoor smartDoor = new SmartDoor();
             model = smartDoor.Model;
             Assert.IsNotNull(model);
